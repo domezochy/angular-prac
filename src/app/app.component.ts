@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-prac';
+
+  name = {
+    name : 'Ochieng', 
+    lastname : 'Godfrey',
+    age : 40
+  }
+
+  switch: boolean = true;
+
+  toogleSwitch(){
+
+    this.switch = !this.switch;
+  }
+
 }

@@ -1,0 +1,24 @@
+<p>Student List</p>
+
+<h1> {{ childname.name }} </h1>
+<h2>{{ childname.age}}</h2>
+<h3> {{ childname.lastname}}</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody> 
+    <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.dateOfBirth }}</td>
+     </tr>   
+    </tbody>
+</table>
