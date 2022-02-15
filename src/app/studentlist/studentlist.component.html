@@ -14,8 +14,8 @@
         </tr>
     </thead>
     <tbody> 
-    <tr *ngFor="let student of students">
-        <td>{{ student.id }}</td>
+    <tr (click)="onSelect(student)" *ngFor="let student of students">
+        <button><td class="id">{{ student.id }}</td></button>
         <td>{{ student.name }}</td>
         <td>{{ student.gender }}</td>
         <td>{{ student.dateOfBirth }}</td>

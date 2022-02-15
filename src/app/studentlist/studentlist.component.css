@@ -8,8 +8,18 @@ td{
     padding : 4px;
 }
 
+td.id{
+    border : none;
+    padding : 4px;
+}
+
 th{
     border : 1px solid black;
     padding : 8px;
     
+}
+
+button {
+    color : purple;
+    border : solid black;
 }
